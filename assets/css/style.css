@@ -1,0 +1,11 @@
+body{
+    background-image: url(../images/loosegemstones.jpg);
+    background-repeat: no-repeat;
+}
+
+.gemstone{
+    width: 150px;
+    height: 150px;
+    border: 5px dotted yellow;
+}
+
