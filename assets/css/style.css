@@ -13,44 +13,122 @@ body{
     background-image: url(../images/loosegemstones.jpg);
     background-repeat: no-repeat;
 }
-/*h1{
-    font-size:50px;
-    font-family:'Petit Formal Script', cursive;
+
+
+.shimmer {
+    font-family: 'Petit Formal Script', cursive;;
     font-weight: bolder;
+    font-size: 100px;
+    margin: 0 auto;
+    padding: 0 40px 0 0;
+    display: inline;
+    margin-bottom: 0;
     text-align: center;
-    color: rgba(255, 255, 255, 0.1);
-}*/
-h1{
-    font-size:40px;
-    font-family:'Petit Formal Script', cursive;
-    font-weight: bolder;
+  }
+  .shimmer {
+    text-align: center;
+    color: rgb(13, 47, 169, 0.1);
+    background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+    background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+    background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+    -webkit-background-size: 125px 100%;
+    -moz-background-size: 125px 100%;
+    background-size: 125px 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-animation-name: shimmer;
+    -moz-animation-name: shimmer;
+    animation-name: shimmer;
+    -webkit-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: #222;
+  }
+  @-moz-keyframes shimmer {
+    0% {
+      background-position: top left;
+    }
+    100% {
+      background-position: top right;
+    }
+  }
+  @-webkit-keyframes shimmer {
+    0% {
+      background-position: top left;
+    }
+    100% {
+      background-position: top right;
+    }
+  }
+  @-o-keyframes shimmer {
+    0% {
+      background-position: top left;
+    }
+    100% {
+      background-position: top right;
+    }
+  }
+  @keyframes shimmer {
+    0% {
+      background-position: top left;
+    }
+    100% {
+      background-position: top right;
+    }
+  }
+  
+h3{
+  color: black;  
+  font-size:60px;
+    font-family: 'Farsan', cursive;
 
 }
-h3{
-    font-size:30px;
-    font-family: 'Salsa', cursive;
-
+h4{
+  color: black; 
+  font-family: 'Salsa', cursive;
+}
+h5{
+  color:black;
+  font-family: 'Salsa', cursive;
+}
+h6{
+  color:black; 
+  font-family: 'Salsa', cursive;
+}
+#wins{
+  color: black; 
+  font-family: 'Salsa', cursive;
+}
+#loses{
+  color: black; 
+  font-family: 'Salsa', cursive;
 }
 
 #diamond{
     width: 150px;
     height: 150px;
-    border: 5px dotted yellow;
+    
 }
 #sapphire{
     width: 150px;
     height: 150px;
-    border: 5px dotted yellow;
+    
 }
 #pinkSapphire{
     width: 150px;
     height: 150px;
-    border: 5px dotted yellow;
+    
 }
 #ruby{
     width: 150px;
     height: 150px;
-    border: 5px dotted yellow;
+    
 }
 
 

@@ -22,20 +22,24 @@
 </head>
 
 <body>
-
+    
     <div class="container">
         <div id="crystals">
+                <header class="shimmer">Gemstones</header>
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-4">
+                   
+                </div>
+                <div class="col-sm-3">
 
                 </div>
-                <div class="col-sm-6">
-                    <h1>Number to Guess:<span id="number-to-guess"></span> </h1>
-                    <h3>Your number<span id="playerGuess"></span></h3>
+                <div class="col-sm-5">
+                    <h3>Number to Guess: <span id="number-to-guess"></span> </h3>
+                    <h3>Your Number: <span id="playerGuess"></span></h3>
                 </div>
             </div>
             <div class="row">
-                
+
                 <br>
             </div>
             <div class="row">
@@ -44,108 +48,38 @@
                 </div>
                 <div class="col-sm-5">
                     <img id="diamond" src="assets/images/diamond.png">
-                    <img id="sapphire" src="assets/images/sapphire.png">
+                    <img id="sapphire" src="assets/images/fc94cb70e471b98ff6796c3e1f4ad382.png">
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-7">
-
+                    <br>
+                        <h5>Instructions</h5>
+                        <h6>Click on the gems until your total number matches the number on the screen.</h6>
                 </div>
                 <div class="col-sm-5">
-                    <img id="pinkSapphire" src="assets/images/pink-sapphire.jpg">
-                    <img id="ruby" src="assets/images/ruby.png">
+                    <img id="pinkSapphire" src="assets/images/bdfa333ff7904fb20c956fc022e28f68.png">
+                    <img id="ruby" src="assets/images/1-ct-lab-created-ruby-pear-8x5mm.png">
 
                 </div>
 
             </div>
             <div class="row">
-                    <div class="col-sm-7">
-    
-                    </div>
-                    <div class="col-sm-2">
-                        <h4 id= "wins">Wins</h4>
-                        </div>
-                        <div class="col-sm-3">
-                            <h4 id ="losses">Losses</h4>
-                        </div>
+                <div class="col-sm-7">
+                        
+                </div>
+                <div class="col-sm-2">
+                    <h4>Wins <span id="wins"></span></h4>
+                </div>
+                <div class="col-sm-3">
+                    <h4>Losses <span id="losses"></spanid>
+                    </h4>
+                </div>
 
 
-            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-            <script type="text/javascript">
-                //need to randomly generate a number
-                // need to have random numeric values assigned to each picture
-                // need to be able to calculate each one based on a key event
-                // be able to reset itself if the user wins or loses
-                var num =Math.floor(Math.random() * 200) + 50;
-                var playerScore= 0;
-                var diamond=Math.floor(Math.random() * 50) + 19;
-                var sapphire = Math.floor(Math.random() * 10) + 1;
-                var pinkSapphire=  Math.floor(Math.random() * 30) + 10;
-                var ruby = Math.floor(Math.random() * 20) + 1;
-                var wins=0;
-                var losses= 0;
-                console.log(num);
-
-                 $("#number-to-guess").text(num);
-
-                $(document).ready(function(){
-
-                function play() {
-                    num
-                    diamond 
-                    ruby 
-                    pinkSapphire 
-                    sapphire
-                    console.log(num);
-                }
-                $("#diamond").click(function (event) {
-                    playerScore = playerScore + diamond;
-                    $("#diamond").text(playerScore);
-                   // rules();
-                   console.log(diamond)
-                });
-                $("#sapphire").click(function (event) {
-                    playerScore = playerScore + sapphire;
-                    $("#sapphire").text(playerScore);
-                    //rules();
-                    console.log(sapphire)
-                });
-                $("#pinkSapphire").click(function (event) {
-                    playerScore = playerScore + pinkSapphire;
-                    $("#pinkSapphire").text(playerScore);
-                    //rules();
-                    console.log(pinkSapphire)
-                });
-                $("#ruby").click(function (event) {
-                    playerScore= playerScore + ruby;
-                    $("#ruby").text(playerScore);
-                    //rules();
-                    console.log(ruby)
-                });
-                function play(){
-                    if(playerScore == num)
-                    alert("Yay!!! You did it!!!!!");
-                    (wins =+1);
-                    document.getElementById()
-                }
-
-
-
-
-               // $(".gemstone").on("click", function () {
-                //    counter += increment;
-
-                 //   var counter = 0;
-                  //  $(".gemstone").on("click", function () {
-                    //    counter += 1;
-
-                  //  });
-
-                  //      });
-
-});
-            </script>
+                <script src="assets/javascript/game.js"></script>
+                   
+                
 </body>
 
 </html>
