@@ -15,18 +15,27 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Carter+One|Cinzel+Decorative|Delius+Swash+Caps|Farsan|Petit+Formal+Script|Salsa"
+        rel="stylesheet">
 
     <title>Unit-4-Game</title>
 </head>
 
 <body>
-    <h1>Number to Guess: <span id="number-to-guess"></span></h1>
+
     <div class="container">
         <div id="crystals">
             <div class="row">
-                <br>
+                <div class="col-sm-6">
+
+                </div>
+                <div class="col-sm-6">
+                    <h1>Number to Guess:<span id="number-to-guess"></span> </h1>
+                    <h3>Your number<span id="playerGuess"></span></h3>
+                </div>
             </div>
             <div class="row">
+                
                 <br>
             </div>
             <div class="row">
@@ -34,8 +43,8 @@
 
                 </div>
                 <div class="col-sm-5">
-                    <img class="gemstone" src="assets/images/diamond.png">
-                    <img class="gemstone" src="assets/images/sapphire.png">
+                    <img id="diamond" src="assets/images/diamond.png">
+                    <img id="sapphire" src="assets/images/sapphire.png">
                 </div>
             </div>
             <div class="row">
@@ -43,43 +52,99 @@
 
                 </div>
                 <div class="col-sm-5">
-                    <img class="gemstone" src="assets/images/pink-sapphire.jpg">
-                    <img class="gemstone" src="assets/images/ruby.png">
+                    <img id="pinkSapphire" src="assets/images/pink-sapphire.jpg">
+                    <img id="ruby" src="assets/images/ruby.png">
 
                 </div>
+
             </div>
+            <div class="row">
+                    <div class="col-sm-7">
+    
+                    </div>
+                    <div class="col-sm-2">
+                        <h4 id= "wins">Wins</h4>
+                        </div>
+                        <div class="col-sm-3">
+                            <h4 id ="losses">Losses</h4>
+                        </div>
 
 
             <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
             <script type="text/javascript">
-            //working on creating the variables that will work with the math.random funtion to generate numbers to be
-            //concatenated together so that new numbers can be added together and changing around the functions so things
-            //work well together.
-                var numScale [1]
-                var num = Math.floor(Math.random() * 10);
+                //need to randomly generate a number
+                // need to have random numeric values assigned to each picture
+                // need to be able to calculate each one based on a key event
+                // be able to reset itself if the user wins or loses
+                var num =Math.floor(Math.random() * 200) + 50;
+                var playerScore= 0;
+                var diamond=Math.floor(Math.random() * 50) + 19;
+                var sapphire = Math.floor(Math.random() * 10) + 1;
+                var pinkSapphire=  Math.floor(Math.random() * 30) + 10;
+                var ruby = Math.floor(Math.random() * 20) + 1;
+                var wins=0;
+                var losses= 0;
                 console.log(num);
 
-                $(".gemstone").on("click", function () {
-                    alert("You clicked a crystal!");
+                 $("#number-to-guess").text(num);
 
-                    var counter = 0;
-                    $(".gemstone").on("click", function () {
-                        counter += 1;
-                        alert("You clicked this crystal " + counter + " times!");
+                $(document).ready(function(){
 
-                    });
-                    var targetNumber = num;
-
-                    $("#number-to-guess").text(targetNumber);
-                    var counter = 0;
-                    $(".crystal-image").on("click", function () {
-                        counter += 10;
-                        alert("Your new score is: " + counter);
-
-                    });
-
+                function play() {
+                    num
+                    diamond 
+                    ruby 
+                    pinkSapphire 
+                    sapphire
+                    console.log(num);
+                }
+                $("#diamond").click(function (event) {
+                    playerScore = playerScore + diamond;
+                    $("#diamond").text(playerScore);
+                   // rules();
+                   console.log(diamond)
                 });
+                $("#sapphire").click(function (event) {
+                    playerScore = playerScore + sapphire;
+                    $("#sapphire").text(playerScore);
+                    //rules();
+                    console.log(sapphire)
+                });
+                $("#pinkSapphire").click(function (event) {
+                    playerScore = playerScore + pinkSapphire;
+                    $("#pinkSapphire").text(playerScore);
+                    //rules();
+                    console.log(pinkSapphire)
+                });
+                $("#ruby").click(function (event) {
+                    playerScore= playerScore + ruby;
+                    $("#ruby").text(playerScore);
+                    //rules();
+                    console.log(ruby)
+                });
+                function play(){
+                    if(playerScore == num)
+                    alert("Yay!!! You did it!!!!!");
+                    (wins =+1);
+                    document.getElementById()
+                }
+
+
+
+
+               // $(".gemstone").on("click", function () {
+                //    counter += increment;
+
+                 //   var counter = 0;
+                  //  $(".gemstone").on("click", function () {
+                    //    counter += 1;
+
+                  //  });
+
+                  //      });
+
+});
             </script>
 </body>
 

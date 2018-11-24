@@ -1,11 +1,58 @@
+/*
+font-family: 'Carter One', cursive;
+font-family: 'Petit Formal Script', cursive;
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Delius Swash Caps', cursive;
+font-family: 'Salsa', cursive;
+font-family: 'Farsan', cursive;
+*/
+
+
+
 body{
     background-image: url(../images/loosegemstones.jpg);
     background-repeat: no-repeat;
 }
+/*h1{
+    font-size:50px;
+    font-family:'Petit Formal Script', cursive;
+    font-weight: bolder;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.1);
+}*/
+h1{
+    font-size:40px;
+    font-family:'Petit Formal Script', cursive;
+    font-weight: bolder;
 
-.gemstone{
+}
+h3{
+    font-size:30px;
+    font-family: 'Salsa', cursive;
+
+}
+
+#diamond{
     width: 150px;
     height: 150px;
     border: 5px dotted yellow;
 }
+#sapphire{
+    width: 150px;
+    height: 150px;
+    border: 5px dotted yellow;
+}
+#pinkSapphire{
+    width: 150px;
+    height: 150px;
+    border: 5px dotted yellow;
+}
+#ruby{
+    width: 150px;
+    height: 150px;
+    border: 5px dotted yellow;
+}
+
+
+
 
