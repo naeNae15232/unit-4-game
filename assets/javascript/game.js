@@ -16,14 +16,15 @@ console.log(num, "Computer guess");
 
  //function to have the game reset so it can be played again
  function play() {
-    $("#number-to-guess").html(num);
+    $("#number-to-guess").text(num);
     num = Math.floor(Math.random() * 200) + 50;
     diamond = Math.floor(Math.random() * 50) + 19;
     sapphire = Math.floor(Math.random() * 10) + 1;
     pinkSapphire = Math.floor(Math.random() * 30) + 10;
     ruby = Math.floor(Math.random() * 20) + 1;
-    playerScore = 0
+    playerScore = 0;
     $("#playerGuess").html(playerScore);
+    $("#number-to-guess").html(num);
     console.log(num, "multiple computer guess");
 }
 
@@ -40,7 +41,7 @@ $(document).ready(function () {
         $("#diamond").text(playerScore);
         $("#playerGuess").html(playerScore);
         playGame();
-        console.log(diamond, "D Guess")
+        console.log(diamond, "d guess")
     });
     $("#sapphire").click(function (event) {
         playerScore = playerScore + sapphire;
