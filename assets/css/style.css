@@ -24,7 +24,7 @@ body{
     display: inline;
     margin-bottom: 0;
     text-align: center;
-    border: black 1px solid;
+    
 
   }
   .shimmer {
@@ -89,67 +89,67 @@ h3{
   color: black;  
   font-size:60px;
     font-family: 'Farsan', cursive;
-    border: black 1px solid;
+   
 
 }
 h4{
   color: black; 
   font-family: 'Salsa', cursive;
-  border: black 1px solid;
+  
 
 }
 h5{
   color:black;
   font-family: 'Salsa', cursive;
   margin: 100px 0px 0px 0px;
-  border: black 1px solid;
+ 
 
 }
 
 h6{
   color:black; 
   font-family: 'Salsa', cursive;
-  border: black 1px solid;
+ 
 
 }
 #wins{
   color: black; 
   font-family: 'Salsa', cursive;
-  border: black 1px solid;
+  
 
 }
 #loses{
   color: black; 
   font-family: 'Salsa', cursive;
-  border: black 1px solid;
+ 
 
 }
 
 #diamond{
     width: 150px;
     height: 150px;
-    border: black 1px solid;
+    
 
     
 }
 #sapphire{
     width: 150px;
     height: 150px;
-    border: black 1px solid;
+   
 
     
 }
 #pinkSapphire{
     width: 150px;
     height: 150px;
-    border: black 1px solid;
+    
 
     
 }
 #ruby{
     width: 150px;
     height: 150px;
-    border: black 1px solid;
+    
 
     
 }
